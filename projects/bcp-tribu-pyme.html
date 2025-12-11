@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma PyME – BCP | Paul Rodríguez</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html">PR</a>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../home/projects.html" class="nav-link active">Proyectos</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container project-detail">
+
+      <!-- TÍTULO -->
+      <h1>Plataforma PyME – BCP</h1>
+
+      <!-- META -->
+      <p class="project-meta">
+        Cliente: <strong>BCP / NTT DATA</strong> · 
+        Año: <strong>2024</strong> · 
+        Rol: <strong>Backend Developer / Arquitectura Aplicativa</strong>
+      </p>
+
+      <!-- IMAGEN PRINCIPAL -->
+      <img src="../assets/img/bcp.png" alt="Plataforma PyME – BCP" class="project-hero-img" />
+
+      <!-- CONTEXTO -->
+      <h2>Contexto</h2>
+      <p>
+        El Banco de Crédito del Perú (BCP), a través de su tribu PyME, necesitaba 
+        modernizar y optimizar sus procesos de atención y evaluación financiera para 
+        pequeñas y medianas empresas. La plataforma existente presentaba limitaciones 
+        en escalabilidad, integración y trazabilidad de los datos, dificultando el 
+        manejo de grandes volúmenes de solicitudes y el análisis en tiempo real.
+      </p>
+
+      <p>
+        Además, la solución debía integrarse con diversos servicios internos del banco 
+        y aprovechar los recursos cloud disponibles en Microsoft Azure, manteniendo altos 
+        estándares de seguridad, auditoría y disponibilidad.
+      </p>
+
+      <!-- SOLUCIÓN -->
+      <h2>Solución Implementada</h2>
+      <p>
+        Participé en el desarrollo de una plataforma moderna basada en microservicios 
+        desacoplados, construidos en <strong>Java 17 + Spring Boot</strong>, con despliegue 
+        automatizado y servicios distribuidos en Azure. La solución permitió mejorar 
+        el flujo de evaluación PyME, integrando fuentes de datos internas y externas.
+      </p>
+
+      <p>
+        Las funcionalidades clave implementadas incluyen:
+      </p>
+
+      <ul>
+        <li>Diseño y desarrollo de microservicios robustos orientados a dominio.</li>
+        <li>Integración con <strong>Azure Functions</strong> para procesamiento asíncrono.</li>
+        <li>Ingesta estructurada de información a <strong>Azure Data Lake</strong>.</li>
+        <li>Exposición segura de APIs mediante <strong>Azure API Management (APIM)</strong>.</li>
+        <li>Monitoreo avanzado y telemetría con herramientas internas del banco.</li>
+        <li>Implementación de pipelines CI/CD con despliegues automatizados.</li>
+      </ul>
+
+      <!-- TECNOLOGÍAS -->
+      <h2>Tecnologías Utilizadas</h2>
+      <ul>
+        <li>Java 17, Spring Boot (REST, WebFlux, Spring Security)</li>
+        <li>Azure Functions y Serverless Computing</li>
+        <li>Azure API Management (APIM)</li>
+        <li>Azure Data Lake & Data Factory</li>
+        <li>Azure DevOps (Repos, Pipelines, Boards)</li>
+        <li>Kafka para mensajería distribuida</li>
+        <li>MongoDB & SQL Server</li>
+        <li>Patrones: Hexagonal, Clean Architecture, DDD aplicado</li>
+      </ul>
+
+      <!-- RESULTADOS -->
+      <h2>Resultados Clave</h2>
+      <p>
+        La nueva plataforma permitió al BCP mejorar significativamente la eficiencia 
+        en el procesamiento de solicitudes PyME, logrando:
+      </p>
+
+      <ul>
+        <li>Reducción del tiempo de respuesta en más de <strong>45%</strong>.</li>
+        <li>Mejor trazabilidad y auditoría de cada flujo de negocio.</li>
+        <li>Incremento en la disponibilidad y resiliencia del sistema.</li>
+        <li>Mayor velocidad para integrar nuevos servicios y funcionalidades.</li>
+        <li>Escalabilidad horizontal mediante microservicios desacoplados.</li>
+      </ul>
+
+      <!-- MOCKUPS -->
+      <h2>Mockups del Proyecto</h2>
+      <p>Puedes incluir capturas del dashboard, flujos o interfaces internas (siempre sin información sensible).</p>
+
+      <div class="mockups-grid">
+        <img src="../assets/img/mockup1.png" alt="Mockup BCP 1" class="mockup-img" />
+        <img src="../assets/img/mockup2.png" alt="Mockup BCP 2" class="mockup-img" />
+        <img src="../assets/img/mockup3.png" alt="Mockup BCP 3" class="mockup-img" />
+      </div>
+
+      <style>
+        .mockups-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 20px;
+          margin: 20px 0 40px;
+        }
+        .mockup-img {
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+          object-fit: cover;
+        }
+      </style>
+
+      <!-- VOLVER -->
+      <a href="../home/projects.html" class="btn btn-outline">← Volver a proyectos</a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 · Paul Rodríguez Mijahuanga</p>
+    </div>
+  </footer>
+
+  <script src="/paul-portafolio/assets/js/main.js"></script>
+</body>
+</html>
