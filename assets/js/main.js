@@ -13,16 +13,18 @@ if (navToggle && mainNav) {
 // /home/projects.html -> para subir a raíz: ../
 // /assets/img/         -> ../assets/img/
 
+const base = "/paul-portafolio/";
+
 const projectsData = [
-{
+  {
     id: "bcp-tribu-pyme",
     name: "Plataforma PyME – BCP",
     shortDesc: "Microservicios en Azure, APIs seguras, Data Lake y CI/CD.",
     client: "BCP / NTT DATA",
     year: "2024",
     tech: ["Java", "Spring Boot", "Azure Functions", "APIM", "Kubernetes"],
-    image: "assets/img/bcp.png",
-    detailUrl: "projects/bcp-tribu-pyme.html"
+    image: base + "assets/img/bcp.png",
+    detailUrl: base + "projects/bcp-tribu-pyme.html"
   },
   {
     id: "izipay-ya",
@@ -31,8 +33,8 @@ const projectsData = [
     client: "Interbank / NTT DATA",
     year: "2023",
     tech: ["Java", "Spring Boot", "Arquitectura Hexagonal", "MongoDB", "Azure"],
-    image: "assets/img/izipay-ya.png",
-    detailUrl: "projects/izipay-ya.html"
+    image: base + "assets/img/izipay-ya.png",
+    detailUrl: base + "projects/izipay-ya.html"
   },
   {
     id: "sunat-sigi",
@@ -41,8 +43,8 @@ const projectsData = [
     client: "SUNAT / CANVIA",
     year: "2022",
     tech: ["Java", "JAX-RS", "Gradle", "Kafka", "MongoDB"],
-    image: "assets/img/sunat.png",
-    detailUrl: "projects/sunat-sigi.html"
+    image: base + "assets/img/sunat.png",
+    detailUrl: base + "projects/sunat-sigi.html"
   },
   {
     id: "claro-web-reclamos",
@@ -51,8 +53,8 @@ const projectsData = [
     client: "Claro Perú / Everis",
     year: "2020",
     tech: ["Java", "PL/SQL", "WebLogic", "SOAP", "REST"],
-    image: "assets/img/claro.png",
-    detailUrl: "projects/claro-web-reclamos.html"
+    image: base + "assets/img/claro.png",
+    detailUrl: base + "projects/claro-web-reclamos.html"
   },
   {
     id: "facele-facturacion",
@@ -61,8 +63,8 @@ const projectsData = [
     client: "Facele",
     year: "2018",
     tech: ["Java", "Spring Boot", "MySQL", "AWS"],
-    image: "assets/img/facele.png",
-    detailUrl: "projects/facele-facturacion.html"
+    image: base + "assets/img/facele.png",
+    detailUrl: base + "projects/facele-facturacion.html"
   }
 ];
 
