@@ -43,79 +43,78 @@
       <h2>Contexto</h2>
       <p>
         Interbank buscaba modernizar y acelerar el procesamiento de transacciones 
-        digitales para su ecosistema de pagos con IziPay, permitiendo que 
-        comercios y usuarios pudieran realizar cobros en línea de manera más 
-        segura, estable y escalable.
+        digitales para su ecosistema de pagos con IziPay, permitiendo que comercios 
+        y usuarios pudieran realizar cobros en línea de forma más segura, estable 
+        y escalable.
       </p>
 
       <p>
         El sistema previo presentaba problemas de latencia, baja observabilidad y 
-        alta dependencia entre componentes, causando demoras en conciliaciones, 
-        riesgos operativos y dificultades para auditar transacciones.
+        alta dependencia entre componentes, lo que generaba retrasos en conciliaciones 
+        y poca trazabilidad en la auditoría de transacciones.
       </p>
 
       <!-- SOLUCIÓN -->
       <h2>Solución Implementada</h2>
       <p>
-        La solución consistió en una plataforma de microservicios diseñada bajo 
-        principios de <strong>Arquitectura Hexagonal</strong>, desacoplando completamente 
-        la lógica de negocio de las integraciones externas y permitiendo una mayor 
-        resiliencia frente a fallos.
+        Se diseñó e implementó una plataforma basada en <strong>Arquitectura Hexagonal</strong>
+        para desacoplar la lógica de negocio del proveedor externo IziPay, 
+        permitiendo un flujo de comunicación más estable y mantenible.
       </p>
 
       <ul>
-        <li>Creación de microservicios REST para autorización, reversas y conciliación.</li>
-        <li>Integración directa con servicios de IziPay mediante adaptadores de infraestructura.</li>
-        <li>Uso de <strong>MongoDB</strong> para persistencia flexible y de alto rendimiento.</li>
-        <li>Envío de eventos de auditoría a Kafka para trazabilidad en tiempo real.</li>
-        <li>Automatización del despliegue con Azure DevOps + pipelines CI/CD.</li>
-        <li>Monitoreo avanzado usando <strong>New Relic</strong> (APM, logs y distribuidos).</li>
+        <li>Microservicios REST para autorización, reversas y conciliación.</li>
+        <li>Adaptadores de infraestructura para comunicación directa con IziPay.</li>
+        <li>Persistencia flexible con <strong>MongoDB</strong> y caching con Redis.</li>
+        <li>Uso de <strong>Kafka</strong> para trazabilidad y auditoría en tiempo real.</li>
+        <li>Pipeline CI/CD en Azure DevOps totalmente automatizado.</li>
+        <li>Observabilidad avanzada con <strong>New Relic</strong> (APM, logs y trazas).</li>
       </ul>
 
       <p>
-        Esta arquitectura permitió aislar fallos, reducir dependencias y aumentar 
-        la velocidad de desarrollo de nuevas funcionalidades.
+        Al desacoplar la lógica de negocio y aplicar principios de Clean Architecture, 
+        se logró una solución más estable, escalable y fácil de extender.
       </p>
 
       <!-- TECNOLOGÍAS -->
       <h2>Tecnologías Utilizadas</h2>
       <ul>
-        <li>Java 17 · Spring Boot 2/3</li>
+        <li>Java 17 – Spring Boot 2/3</li>
         <li>Arquitectura Hexagonal / Ports & Adapters</li>
-        <li>MongoDB / Redis</li>
-        <li>Kafka para eventos financieros</li>
-        <li>Azure DevOps + Pipelines CI/CD</li>
-        <li>New Relic para observabilidad</li>
-        <li>REST APIs / Integración con gateways externos</li>
+        <li>MongoDB – Redis</li>
+        <li>Kafka – Event Streaming</li>
+        <li>Azure DevOps – Pipelines CI/CD</li>
+        <li>New Relic – Observabilidad</li>
+        <li>REST APIs – Integración de pasarelas de pago</li>
       </ul>
 
       <!-- RESULTADOS -->
       <h2>Resultados Clave</h2>
-      <p>
-        La implementación logró mejoras significativas en desempeño y estabilidad:
-      </p>
-
       <ul>
-        <li>Reducción del tiempo de procesamiento por transacción en más del <strong>50%</strong>.</li>
-        <li>Incremento de disponibilidad a niveles cercanos al <strong>99.9%</strong>.</li>
-        <li>Mayor control operativo gracias a logs distribuidos y trazabilidad en tiempo real.</li>
-        <li>Resiliencia frente a picos de carga mediante una arquitectura desacoplada.</li>
-        <li>Facilidad para incorporar nuevos medios de pago y flujos futuros.</li>
+        <li>Reducción del tiempo de procesamiento en más de <strong>50%</strong>.</li>
+        <li>Disponibilidad cercana al <strong>99.9%</strong>.</li>
+        <li>Trazabilidad completa del ciclo de vida de cada transacción.</li>
+        <li>Mayor resiliencia ante picos de carga.</li>
+        <li>Facilidad para integrar nuevos medios de pago a futuro.</li>
       </ul>
 
       <!-- MOCKUPS -->
       <h2>Mockups del Proyecto</h2>
-      <p>
-        A continuación, una muestra representativa del flujo de integración, dashboards 
-        de monitoreo y simulaciones del proceso de pago (sin información sensible).
-      </p>
+      <p>Capturas representativas del flujo y monitoreo del sistema (sin información sensible).</p>
 
       <div class="mockups-grid">
-        <img src="../assets/img/izim2.png" alt="Mockup IziPay 1" class="mockup-img" />
+        <img src="../assets/img/izim1.png" alt="Mockup IziPay 1" class="mockup-img" />
         <img src="../assets/img/izim2.png" alt="Mockup IziPay 2" class="mockup-img" />
         <img src="../assets/img/izim3.png" alt="Mockup IziPay 3" class="mockup-img" />
       </div>
 
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Vista previa" />
+      </div>
+
+      <!-- EXTRA CSS (igual al del proyecto BCP) -->
       <style>
         .mockups-grid {
           display: grid;
@@ -128,6 +127,40 @@
           border-radius: 12px;
           box-shadow: 0 6px 24px rgba(0,0,0,0.15);
           object-fit: cover;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .mockup-img:hover {
+          transform: scale(1.03);
+        }
+
+        .lightbox {
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.85);
+          z-index: 9999;
+          justify-content: center;
+          align-items: center;
+        }
+        .lightbox-img {
+          max-width: 90%;
+          max-height: 90vh;
+          border-radius: 10px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .lightbox-close {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+          color: #fff;
+          transition: 0.2s;
+        }
+        .lightbox-close:hover {
+          color: #ffdf91;
         }
       </style>
 
@@ -144,6 +177,38 @@
     </div>
   </footer>
 
+  <!-- LIGHTBOX JS -->
+  <script>
+    const mockups = document.querySelectorAll(".mockup-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    mockups.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- MAIN JS -->
   <script src="/paul-portafolio/assets/js/main.js"></script>
 </body>
 </html>
