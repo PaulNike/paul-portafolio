@@ -115,6 +115,13 @@
         <img src="../assets/img/bcpm3.png" alt="Mockup BCP 3" class="mockup-img" />
       </div>
 
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Vista previa" />
+      </div>
+
+      <!-- CSS EXTRA DEL LIGHTBOX -->
       <style>
         .mockups-grid {
           display: grid;
@@ -127,6 +134,40 @@
           border-radius: 12px;
           box-shadow: 0 6px 24px rgba(0,0,0,0.15);
           object-fit: cover;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .mockup-img:hover {
+          transform: scale(1.03);
+        }
+
+        .lightbox {
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.85);
+          z-index: 9999;
+          justify-content: center;
+          align-items: center;
+        }
+        .lightbox-img {
+          max-width: 90%;
+          max-height: 90vh;
+          border-radius: 10px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .lightbox-close {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+          color: #fff;
+          transition: 0.2s;
+        }
+        .lightbox-close:hover {
+          color: #ffdf91;
         }
       </style>
 

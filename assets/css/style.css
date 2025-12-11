@@ -350,7 +350,50 @@ body {
   color: #f9d6a1;
   text-decoration: none;
 }
+/* LIGHTBOX: Fondo y estructura */
+.lightbox {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
 
+/* Imagen ampliada */
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+/* Botón cerrar */
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.lightbox-close:hover {
+  color: #ffdf91;
+}
+
+/* Hover al mockup */
+.mockup-img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mockup-img:hover {
+  transform: scale(1.03);
+}
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-grid,

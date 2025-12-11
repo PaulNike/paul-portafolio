@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IziPay Ya – Integración de pagos | Paul Rodríguez</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html">PR</a>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../home/projects.html" class="nav-link active">Proyectos</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container project-detail">
+
+      <!-- TÍTULO -->
+      <h1>IziPay Ya – Integración de Pagos</h1>
+
+      <!-- META -->
+      <p class="project-meta">
+        Cliente: <strong>Interbank / NTT DATA</strong> · 
+        Año: <strong>2023</strong> · 
+        Rol: <strong>Backend Developer – Microservicios y Arquitectura</strong>
+      </p>
+
+      <!-- IMAGEN PRINCIPAL -->
+      <img src="../assets/img/izipay-ya.png" alt="IziPay Ya – Integración de pagos" class="project-hero-img" />
+
+      <!-- CONTEXTO -->
+      <h2>Contexto</h2>
+      <p>
+        Interbank buscaba modernizar y acelerar el procesamiento de transacciones 
+        digitales para su ecosistema de pagos con IziPay, permitiendo que 
+        comercios y usuarios pudieran realizar cobros en línea de manera más 
+        segura, estable y escalable.
+      </p>
+
+      <p>
+        El sistema previo presentaba problemas de latencia, baja observabilidad y 
+        alta dependencia entre componentes, causando demoras en conciliaciones, 
+        riesgos operativos y dificultades para auditar transacciones.
+      </p>
+
+      <!-- SOLUCIÓN -->
+      <h2>Solución Implementada</h2>
+      <p>
+        La solución consistió en una plataforma de microservicios diseñada bajo 
+        principios de <strong>Arquitectura Hexagonal</strong>, desacoplando completamente 
+        la lógica de negocio de las integraciones externas y permitiendo una mayor 
+        resiliencia frente a fallos.
+      </p>
+
+      <ul>
+        <li>Creación de microservicios REST para autorización, reversas y conciliación.</li>
+        <li>Integración directa con servicios de IziPay mediante adaptadores de infraestructura.</li>
+        <li>Uso de <strong>MongoDB</strong> para persistencia flexible y de alto rendimiento.</li>
+        <li>Envío de eventos de auditoría a Kafka para trazabilidad en tiempo real.</li>
+        <li>Automatización del despliegue con Azure DevOps + pipelines CI/CD.</li>
+        <li>Monitoreo avanzado usando <strong>New Relic</strong> (APM, logs y distribuidos).</li>
+      </ul>
+
+      <p>
+        Esta arquitectura permitió aislar fallos, reducir dependencias y aumentar 
+        la velocidad de desarrollo de nuevas funcionalidades.
+      </p>
+
+      <!-- TECNOLOGÍAS -->
+      <h2>Tecnologías Utilizadas</h2>
+      <ul>
+        <li>Java 17 · Spring Boot 2/3</li>
+        <li>Arquitectura Hexagonal / Ports & Adapters</li>
+        <li>MongoDB / Redis</li>
+        <li>Kafka para eventos financieros</li>
+        <li>Azure DevOps + Pipelines CI/CD</li>
+        <li>New Relic para observabilidad</li>
+        <li>REST APIs / Integración con gateways externos</li>
+      </ul>
+
+      <!-- RESULTADOS -->
+      <h2>Resultados Clave</h2>
+      <p>
+        La implementación logró mejoras significativas en desempeño y estabilidad:
+      </p>
+
+      <ul>
+        <li>Reducción del tiempo de procesamiento por transacción en más del <strong>50%</strong>.</li>
+        <li>Incremento de disponibilidad a niveles cercanos al <strong>99.9%</strong>.</li>
+        <li>Mayor control operativo gracias a logs distribuidos y trazabilidad en tiempo real.</li>
+        <li>Resiliencia frente a picos de carga mediante una arquitectura desacoplada.</li>
+        <li>Facilidad para incorporar nuevos medios de pago y flujos futuros.</li>
+      </ul>
+
+      <!-- MOCKUPS -->
+      <h2>Mockups del Proyecto</h2>
+      <p>
+        A continuación, una muestra representativa del flujo de integración, dashboards 
+        de monitoreo y simulaciones del proceso de pago (sin información sensible).
+      </p>
+
+      <div class="mockups-grid">
+        <img src="../assets/img/izim2.png" alt="Mockup IziPay 1" class="mockup-img" />
+        <img src="../assets/img/izim2.png" alt="Mockup IziPay 2" class="mockup-img" />
+        <img src="../assets/img/izim3.png" alt="Mockup IziPay 3" class="mockup-img" />
+      </div>
+
+      <style>
+        .mockups-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 20px;
+          margin: 20px 0 40px;
+        }
+        .mockup-img {
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+          object-fit: cover;
+        }
+      </style>
+
+      <!-- VOLVER -->
+      <a href="../home/projects.html" class="btn btn-outline">← Volver a proyectos</a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 · Paul Rodríguez Mijahuanga</p>
+    </div>
+  </footer>
+
+  <script src="/paul-portafolio/assets/js/main.js"></script>
+</body>
+</html>
