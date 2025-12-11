@@ -64,9 +64,7 @@
         el flujo de evaluación PyME, integrando fuentes de datos internas y externas.
       </p>
 
-      <p>
-        Las funcionalidades clave implementadas incluyen:
-      </p>
+      <p>Las funcionalidades clave implementadas incluyen:</p>
 
       <ul>
         <li>Diseño y desarrollo de microservicios robustos orientados a dominio.</li>
@@ -74,40 +72,34 @@
         <li>Ingesta estructurada de información a <strong>Azure Data Lake</strong>.</li>
         <li>Exposición segura de APIs mediante <strong>Azure API Management (APIM)</strong>.</li>
         <li>Monitoreo avanzado y telemetría con herramientas internas del banco.</li>
-        <li>Implementación de pipelines CI/CD con despliegues automatizados.</li>
+        <li>Implementación de pipelines CI/CD automatizados.</li>
       </ul>
 
       <!-- TECNOLOGÍAS -->
       <h2>Tecnologías Utilizadas</h2>
       <ul>
         <li>Java 17, Spring Boot (REST, WebFlux, Spring Security)</li>
-        <li>Azure Functions y Serverless Computing</li>
+        <li>Azure Functions & Serverless</li>
         <li>Azure API Management (APIM)</li>
-        <li>Azure Data Lake & Data Factory</li>
-        <li>Azure DevOps (Repos, Pipelines, Boards)</li>
-        <li>Kafka para mensajería distribuida</li>
-        <li>MongoDB & SQL Server</li>
-        <li>Patrones: Hexagonal, Clean Architecture, DDD aplicado</li>
+        <li>Azure Data Lake, Data Factory</li>
+        <li>Azure DevOps (Repos, Pipelines)</li>
+        <li>Kafka, MongoDB, SQL Server</li>
+        <li>Hexagonal Architecture, Clean Architecture, DDD</li>
       </ul>
 
       <!-- RESULTADOS -->
       <h2>Resultados Clave</h2>
-      <p>
-        La nueva plataforma permitió al BCP mejorar significativamente la eficiencia 
-        en el procesamiento de solicitudes PyME, logrando:
-      </p>
-
       <ul>
-        <li>Reducción del tiempo de respuesta en más de <strong>45%</strong>.</li>
-        <li>Mejor trazabilidad y auditoría de cada flujo de negocio.</li>
-        <li>Incremento en la disponibilidad y resiliencia del sistema.</li>
-        <li>Mayor velocidad para integrar nuevos servicios y funcionalidades.</li>
-        <li>Escalabilidad horizontal mediante microservicios desacoplados.</li>
+        <li>Reducción del tiempo de respuesta en más del <strong>45%</strong>.</li>
+        <li>Mejor trazabilidad y auditoría por flujo.</li>
+        <li>Mayor estabilidad y resiliencia del sistema.</li>
+        <li>Escalabilidad horizontal mediante microservicios.</li>
+        <li>Aceleración del desarrollo de nuevas funcionalidades.</li>
       </ul>
 
       <!-- MOCKUPS -->
       <h2>Mockups del Proyecto</h2>
-      <p>Puedes incluir capturas del dashboard, flujos o interfaces internas (siempre sin información sensible).</p>
+      <p>Puedes incluir capturas del dashboard, flujos o interfaces internas.</p>
 
       <div class="mockups-grid">
         <img src="../assets/img/bcpm1.png" alt="Mockup BCP 1" class="mockup-img" />
@@ -184,6 +176,42 @@
     </div>
   </footer>
 
+  <!-- LIGHTBOX JS -->
+  <script>
+    const mockups = document.querySelectorAll(".mockup-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    // Abrir imagen
+    mockups.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    // Cerrar con la X
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    // Cerrar al hacer clic afuera
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+    // Cerrar con tecla ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- MAIN JS -->
   <script src="/paul-portafolio/assets/js/main.js"></script>
 </body>
 </html>
