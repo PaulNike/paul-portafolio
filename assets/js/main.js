@@ -20,7 +20,7 @@ const projectsData = [
     client: "BCP / NTT DATA",
     year: "2024",
     tech: ["Java", "Spring Boot", "Azure Functions", "APIM", "Kubernetes"],
-    image: "assets/img/bcp.png",
+    image: "../assets/img/bcp.png",
     detailUrl: "projects/bcp-tribu-pyme.html"
   },
   {
@@ -30,7 +30,7 @@ const projectsData = [
     client: "Interbank / NTT DATA",
     year: "2023",
     tech: ["Java", "Spring Boot", "Arquitectura Hexagonal", "MongoDB", "Azure"],
-    image: "assets/img/izipay-ya.png",
+    image: "../assets/img/izipay-ya.png",
     detailUrl: "projects/izipay-ya.html"
   },
   {
@@ -40,7 +40,7 @@ const projectsData = [
     client: "SUNAT / CANVIA",
     year: "2022",
     tech: ["Java", "JAX-RS", "Gradle", "Kafka", "MongoDB"],
-    image: "assets/img/sunat.png",
+    image: "../assets/img/sunat.png",
     detailUrl: "projects/sunat-sigi.html"
   },
   {
@@ -50,7 +50,7 @@ const projectsData = [
     client: "Claro Perú / Everis",
     year: "2020",
     tech: ["Java", "PL/SQL", "WebLogic", "SOAP", "REST"],
-    image: "assets/img/claro.png",
+    image: "../assets/img/claro.png",
     detailUrl: "projects/claro-web-reclamos.html"
   },
   {
@@ -60,7 +60,7 @@ const projectsData = [
     client: "Facele",
     year: "2018",
     tech: ["Java", "Spring Boot", "MySQL", "AWS"],
-    image: "assets/img/facele.png",
+    image: "../assets/img/facele.png",
     detailUrl: "projects/facele-facturacion.html"
   }
   // Puedes seguir agregando proyectos hasta tener 15+
