@@ -1,132 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portafolio | Paul Rodríguez Mijahuanga</title>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background: #faf7f4;
-        color: #333;
-    }
-
-    header {
-        background: #78141e; /* vino */
-        padding: 50px;
-        color: white;
-        text-align: center;
-    }
-
-    h1, h2, h3 {
-        color: #78141e;
-    }
-
-    .section {
-        padding: 40px 10%;
-    }
-
-    .card {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
-    }
-
-    .mockup {
-        width:100%;
-        border-radius:10px;
-        margin-top:10px;
-        box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    footer {
-        background: #78141e;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 50px;
-    }
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Paul Rodríguez</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">PR</a>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="about.html" class="nav-link">Sobre mí</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Proyectos</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
 
-<header>
-    <h1>Paul Rodríguez Mijahuanga</h1>
-    <p>Arquitecto de Software • Full-Stack Developer • Especialista en Cloud</p>
-</header>
-
-<section class="section">
-    <h2>Resumen Profesional</h2>
-    <div class="card">
-        <p>
-            Profesional con gran experiencia en desarrollo backend, microservicios,
-            arquitectura empresarial, y despliegues en Azure y AWS. He trabajado en 
-            proyectos críticos para banca (BCP, Interbank), SUNAT, Claro y empresas 
-            privadas; garantizando calidad, seguridad y escalabilidad.
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Paul Rodríguez Mijahuanga</h1>
+        <p class="hero-subtitle">
+          Arquitecto de Software · Full-Stack Developer · Cloud Specialist
         </p>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Experiencia Destacada</h2>
-
-    <div class="card">
-        <h3>NTT DATA – Proyecto BCP | Tribu PyME</h3>
-        <p>Microservicios, Azure Functions, Data Lake, CI/CD, Kubernetes.</p>
-    </div>
-
-    <div class="card">
-        <h3>Interbank – Proyecto IZIPAY YA</h3>
-        <p>Arquitectura hexagonal, pruebas de estrés, monitoreo con New Relic.</p>
-    </div>
-
-    <div class="card">
-        <h3>SUNAT – SIGI, MESA CPE, SIGCA</h3>
-        <p>Desarrollo de servicios REST, JSP, Angular, WebLogic, facturación electrónica.</p>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Servicios que Ofrezco</h2>
-    <div class="card">
-        <ul>
-            <li>Desarrollo Web y E-commerce</li>
-            <li>Integración de pagos (Niubiz / Izipay)</li>
-            <li>KDS – Kitchen Display System</li>
-            <li>Arquitectura de Software (C4, microservicios)</li>
-            <li>APIs seguras con OAuth2 / JWT</li>
-            <li>Infraestructura Cloud: Azure, AWS</li>
+        <p class="hero-text">
+          Diseñando soluciones escalables y seguras para banca, sector público y
+          negocios que quieren crecer. Especializado en Java, microservicios,
+          Azure, arquitecturas hexagonales y e-commerce de alto impacto.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">Ver proyectos</a>
+          <a href="assets/cv/PaulRodriguezCV.pdf" class="btn btn-outline" target="_blank">
+            Descargar CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>En qué puedo ayudarte</h2>
+        <ul class="hero-list">
+          <li>Diseño de arquitecturas escalables (C4, microservicios)</li>
+          <li>E-commerce a medida (restaurantes, retail, servicios)</li>
+          <li>Integración con Azure, AWS, CI/CD y observabilidad</li>
+          <li>APIs seguras (OAuth2, JWT, API Gateway)</li>
         </ul>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-    <h2>Mockups del Proyecto</h2>
-
-    <div class="card">
-        <h3>Página Principal</h3>
-        <img src="mockup_home.png" class="mockup">
+  <!-- EMPRESAS / LOGOS -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Experiencia en entornos exigentes</h2>
+      <p class="section-intro">
+        He trabajado en proyectos críticos para banca, telecomunicaciones y
+        sector público, manteniendo altos estándares de calidad, seguridad y
+        disponibilidad.
+      </p>
+      <div class="logos-row">
+        <div class="logo-item">BCP</div>
+        <div class="logo-item">Interbank</div>
+        <div class="logo-item">SUNAT</div>
+        <div class="logo-item">Claro</div>
+        <div class="logo-item">NTT DATA</div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-        <h3>Menú / Carta</h3>
-        <img src="mockup_menu.png" class="mockup">
+  <!-- CALL TO ACTION -->
+  <section class="section">
+    <div class="container cta">
+      <div>
+        <h2>¿Buscas una plataforma sólida para tu negocio?</h2>
+        <p>
+          Puedo ayudarte a diseñar y desarrollar una solución robusta, segura y
+          lista para escalar: desde el backend hasta la experiencia de usuario.
+        </p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Hablemos</a>
     </div>
+  </section>
 
-    <div class="card">
-        <h3>Checkout</h3>
-        <img src="mockup_checkout.png" class="mockup">
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 · Paul Rodríguez Mijahuanga</p>
+      <p>
+        <a href="https://github.com/" target="_blank">GitHub</a> ·
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      </p>
     </div>
-</section>
+  </footer>
 
-<footer>
-    <p>© 2025 — Portafolio Profesional de Paul Rodríguez Mijahuanga</p>
-</footer>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
