@@ -9,8 +9,9 @@ if (navToggle && mainNav) {
 }
 
 // ------- PROYECTOS DINÁMICOS --------
-// Estructura parametrizada para tus proyectos
-// Agrega / edita aquí hasta 15+ proyectos
+// Rutas corregidas según la estructura:
+// /home/projects.html -> para subir a raíz: ../
+// /assets/img/         -> ../assets/img/
 
 const projectsData = [
   {
@@ -21,7 +22,7 @@ const projectsData = [
     year: "2024",
     tech: ["Java", "Spring Boot", "Azure Functions", "APIM", "Kubernetes"],
     image: "../assets/img/bcp.png",
-    detailUrl: "projects/bcp-tribu-pyme.html"
+    detailUrl: "../projects/bcp-tribu-pyme.html"
   },
   {
     id: "izipay-ya",
@@ -31,7 +32,7 @@ const projectsData = [
     year: "2023",
     tech: ["Java", "Spring Boot", "Arquitectura Hexagonal", "MongoDB", "Azure"],
     image: "../assets/img/izipay-ya.png",
-    detailUrl: "projects/izipay-ya.html"
+    detailUrl: "../projects/izipay-ya.html"
   },
   {
     id: "sunat-sigi",
@@ -41,7 +42,7 @@ const projectsData = [
     year: "2022",
     tech: ["Java", "JAX-RS", "Gradle", "Kafka", "MongoDB"],
     image: "../assets/img/sunat.png",
-    detailUrl: "projects/sunat-sigi.html"
+    detailUrl: "../projects/sunat-sigi.html"
   },
   {
     id: "claro-web-reclamos",
@@ -51,7 +52,7 @@ const projectsData = [
     year: "2020",
     tech: ["Java", "PL/SQL", "WebLogic", "SOAP", "REST"],
     image: "../assets/img/claro.png",
-    detailUrl: "projects/claro-web-reclamos.html"
+    detailUrl: "../projects/claro-web-reclamos.html"
   },
   {
     id: "facele-facturacion",
@@ -61,21 +62,8 @@ const projectsData = [
     year: "2018",
     tech: ["Java", "Spring Boot", "MySQL", "AWS"],
     image: "../assets/img/facele.png",
-    detailUrl: "projects/facele-facturacion.html"
+    detailUrl: "../projects/facele-facturacion.html"
   }
-  // Puedes seguir agregando proyectos hasta tener 15+
-  /*
-  {
-    id: "id-unico",
-    name: "Nombre del proyecto",
-    shortDesc: "Pequeña descripción en una línea.",
-    client: "Cliente",
-    year: "202X",
-    tech: ["Tech1", "Tech2", "Tech3"],
-    image: "assets/img/proyecto-x.png",
-    detailUrl: "projects/proyecto-x.html"
-  }
-  */
 ];
 
 function renderProjects() {
@@ -96,11 +84,7 @@ function renderProjects() {
       <ul class="tech-list">
         ${p.tech.map((t) => `<li>${t}</li>`).join("")}
       </ul>
-      ${
-        p.detailUrl
-          ? `<a href="${p.detailUrl}" class="btn btn-outline">Ver detalle</a>`
-          : ""
-      }
+      <a href="${p.detailUrl}" class="btn btn-outline">Ver detalle</a>
     `;
 
     grid.appendChild(card);
