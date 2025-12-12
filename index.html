@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
   <!-- NAVBAR -->
   <header class="site-header">
     <div class="container nav-container">
@@ -26,85 +27,117 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero hero-enhanced">
     <div class="container hero-grid">
 
-      <!-- LEFT SIDE -->
-      <div>
-        <h1>Arquitecto de Software & Full-Stack Developer</h1>
+      <!-- LEFT -->
+      <div class="hero-left">
+        <h1>
+          Arquitecto de Software & Full-Stack Developer<br/>
+          <span class="highlight">Diseño plataformas robustas, seguras y hechas para escalar</span>
+        </h1>
 
-        <p class="hero-subtitle">
-          Construyendo plataformas modernas, escalables y listas para crecer
+        <p class="hero-description">
+          Ayudo a empresas, startups y organizaciones a construir sistemas modernos: 
+          microservicios, plataformas cloud, e-commerce de alto rendimiento y soluciones 
+          críticas que soportan miles de usuarios. Mi enfoque combina arquitectura, 
+          desarrollo y estrategia tecnológica.
         </p>
 
-        <p class="hero-text">
-          Paul Rodríguez ayuda a empresas, startups y equipos a crear soluciones web robustas,
-          seguras y de alto rendimiento. Especialista en Java, microservicios, Cloud Computing,
-          e-commerce y sistemas transaccionales de misión crítica.
-        </p>
-
+        <!-- CTAs -->
         <div class="hero-actions">
-          <a href="home/projects.html" class="btn btn-primary">Ver proyectos</a>
-          <a href="assets/cv/PaulRodriguezCV.pdf" class="btn btn-outline" target="_blank">
-            Descargar CV
-          </a>
+          <a href="home/projects.html" class="btn btn-primary big">Ver proyectos</a>
+          <a href="assets/cv/PaulRodriguezCV.pdf" class="btn btn-outline big" target="_blank">Descargar CV</a>
         </div>
 
-        <!-- TECH BADGES -->
+        <!-- BADGES -->
         <div class="tech-badges">
           <span>Java · Spring Boot</span>
           <span>Microservicios</span>
-          <span>Azure & AWS</span>
+          <span>Azure · AWS</span>
           <span>Laravel · Nuxt · Vue</span>
           <span>Kafka</span>
-          <span>Docker & CI/CD</span>
+          <span>DevOps · CI/CD</span>
         </div>
       </div>
 
-      <!-- RIGHT SIDE -->
-      <div class="hero-card">
-        <h2>¿Qué puedo construir para ti?</h2>
-        <ul class="hero-list">
-          <li>Plataformas empresariales y sistemas críticos</li>
-          <li>E-commerce personalizados y de alto rendimiento</li>
-          <li>CMS corporativos a medida</li>
+      <!-- RIGHT-CARD -->
+      <div class="hero-card enhanced-card">
+        <h2>¿Qué puedo construir para tu negocio?</h2>
+        <ul>
+          <li>Arquitecturas modernas basadas en microservicios</li>
+          <li>E-commerce y plataformas transaccionales de alto rendimiento</li>
+          <li>CMS y sistemas corporativos a medida</li>
           <li>Integraciones bancarias y pasarelas de pago</li>
-          <li>Arquitectura Cloud & DevOps</li>
+          <li>Automatización, DevOps y despliegues cloud</li>
         </ul>
+        <a href="home/contact.html" class="btn btn-primary full">Hablemos</a>
       </div>
+
     </div>
   </section>
 
-  <!-- EMPRESAS -->
-  <section class="section section-alt">
+  <!-- TRUST SECTION -->
+  <section class="section section-alt trust-section">
     <div class="container">
-      <h2>Experiencia en entornos exigentes</h2>
-      <p class="section-intro">
-        Ha participado en proyectos para banca, telecomunicaciones, retail y sector público,
-        desarrollando soluciones de alto impacto, seguridad y disponibilidad.
-      </p>
-
+      <h2>Empresas y organizaciones que han confiado en mi trabajo</h2>
       <div class="logos-row">
         <div class="logo-item">BCP</div>
         <div class="logo-item">Interbank</div>
         <div class="logo-item">SUNAT</div>
         <div class="logo-item">Claro</div>
         <div class="logo-item">NTT DATA</div>
+        <div class="logo-item">Facele</div>
+        <div class="logo-item">TASA</div>
       </div>
     </div>
   </section>
 
-  <!-- CTA FINAL -->
-  <section class="section">
-    <div class="container cta">
+  <!-- WHY ME -->
+  <section class="section why-section">
+    <div class="container why-grid">
       <div>
-        <h2>¿Listo para llevar tu plataforma al siguiente nivel?</h2>
+        <h2>¿Por qué trabajar conmigo?</h2>
+        <ul class="why-list">
+          <li><strong>Experiencia real en banca y proyectos críticos</strong> donde la disponibilidad es clave.</li>
+          <li><strong>Arquitectura sólida y escalable</strong> para acompañar el crecimiento del negocio.</li>
+          <li><strong>Integración completa</strong>: backend, frontend, cloud, DevOps y seguridad.</li>
+          <li><strong>Visión de negocio</strong>: no solo código, sino soluciones que generan impacto.</li>
+          <li><strong>Comunicación clara & trabajo colaborativo</strong>, ideal para equipos ágiles.</li>
+        </ul>
+      </div>
+      <div class="why-highlight">
         <p>
-          Desde la arquitectura hasta el despliegue, construyo soluciones 
-          que escalan, rinden y generan valor real para tu negocio.
+          “Paul no solo desarrolla software; construye plataformas que impulsan negocios”.
         </p>
       </div>
-      <a href="home/contact.html" class="btn btn-primary">Hablemos</a>
+    </div>
+  </section>
+
+  <!-- PROJECTS TEASER -->
+  <section class="section projects-teaser">
+    <div class="container">
+      <h2>Proyectos destacados</h2>
+      <p class="section-intro">Soluciones diseñadas para alto rendimiento, escalabilidad y seguridad.</p>
+
+      <div class="projects-mini-grid">
+        <div class="project-mini-card">BCP – Plataforma PyME</div>
+        <div class="project-mini-card">IziPay – Procesamiento de pagos</div>
+        <div class="project-mini-card">SUNAT – SIGI</div>
+        <div class="project-mini-card">TASA – Beneficios</div>
+        <div class="project-mini-card">Manzana Verde – Plataforma 2023</div>
+      </div>
+
+      <a href="home/projects.html" class="btn btn-primary centered">Ver todos los proyectos</a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final-cta">
+    <div class="container final-cta-box">
+      <h2>¿Listo para construir tu siguiente plataforma?</h2>
+      <p>Trabajemos juntos para crear software moderno, escalable y alineado a tus objetivos.</p>
+      <a href="home/contact.html" class="btn btn-primary big">Agendar una reunión</a>
     </div>
   </section>
 
@@ -119,6 +152,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="/paul-portafolio/assets/js/main.js"></script>
 </body>
 </html>
