@@ -7,113 +7,64 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
-    /* ======================================
-       FIX DE VISIBILIDAD Y CONTRASTE (HERO)
-       ====================================== */
-
-    .hero h1,
-    .hero .hero-highlight,
-    .hero .hero-text,
-    .hero .hero-list li {
-      color: #ffffff !important;
-    }
-
-    .hero-subtitle {
-      color: rgba(255, 255, 255, 0.92) !important;
-      font-weight: 500;
+    /* Estilos adicionales para mejorar la presentación */
+    .hero h1 {
+      font-size: 2.6rem;
+      line-height: 1.2;
     }
 
     .hero-highlight {
       font-weight: 700;
-      color: #ffe08a !important; /* amarillo suave para destacar */
+      color: var(--color-primary, #4a6cff);
     }
 
-    .hero-text {
-      color: rgba(255, 255, 255, 0.92) !important;
-      line-height: 1.6;
+    .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
     }
 
-    /* Botón principal más visible */
-    .btn-primary {
-      background: #fcd34d !important;
-      color: #4a1a1a !important;
-      border: none;
-      font-weight: 600;
-    }
-
-    .btn-primary:hover {
-      background: #ffe58f !important;
-    }
-
-    /* Botón outline sobre fondo oscuro */
-    .btn-outline {
-      border: 2px solid #ffffff !important;
-      color: #ffffff !important;
-    }
-
-    .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.18) !important;
-    }
-
-    /* Tarjeta derecha del HERO */
-    .hero-card {
-      background: rgba(255, 255, 255, 0.18) !important;
-      border: 1px solid rgba(255, 255, 255, 0.25) !important;
-      color: #ffffff !important;
-      backdrop-filter: blur(8px);
-    }
-
-    .hero-card h2 {
-      color: #ffffff !important;
-    }
-
-    .hero-card ul li {
-      color: rgba(255, 255, 255, 0.92) !important;
-    }
-
-    /* Badges más visibles */
     .tech-badges span {
-      background: rgba(255, 255, 255, 0.20) !important;
-      border: 1px solid rgba(255, 255, 255, 0.3) !important;
-      color: #ffffff !important;
-      backdrop-filter: blur(4px);
+      padding: 6px 12px;
+      background: #f5f7ff;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      border: 1px solid #dce3ff;
     }
 
-    /* Cards de proyectos destacados */
+    .featured-projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
     .featured-card {
-      transition: 0.25s ease;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      transition: 0.3s ease;
     }
 
     .featured-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.1);
     }
 
-    /* Logos de empresas */
-    .logo-item {
-      background: #ffffff;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: 600;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    .featured-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
     }
 
-    /* CTA mejorado */
-    .cta h2 {
-      font-size: 1.8rem;
-      color: #222;
-    }
-
-    .cta p {
-      font-size: 1rem;
-      color: #444;
-      max-width: 600px;
+    .footer-content p a {
+      color: var(--color-primary, #4a6cff);
     }
   </style>
 </head>
 
 <body>
-
   <!-- NAVBAR -->
   <header class="site-header">
     <div class="container nav-container">
@@ -153,7 +104,7 @@
           </a>
         </div>
 
-        <!-- Tech Highlights -->
+        <!-- Tech highlights -->
         <div class="tech-badges">
           <span>Java · Spring Boot</span>
           <span>Microservicios</span>
@@ -178,7 +129,7 @@
     </div>
   </section>
 
-  <!-- EMPRESAS -->
+  <!-- EXPERIENCIA -->
   <section class="section section-alt">
     <div class="container">
       <h2>Empresas que han confiado en mi trabajo</h2>
@@ -257,6 +208,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="/paul-portafolio/assets/js/main.js"></script>
 </body>
 </html>
