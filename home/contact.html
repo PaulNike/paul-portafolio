@@ -5,8 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto | Paul Rodríguez</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    /* Sticky footer */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .site-footer {
+      margin-top: auto;
+    }
+
+    /* Contact page enhancements */
+    .contact-cta {
+      margin-top: 25px;
+      padding: 16px 22px;
+      display: inline-block;
+      background: var(--color-primary, #4a6cff);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .contact-cta:hover {
+      opacity: 0.85;
+    }
+
+    .impact-box {
+      background: #f9f9ff;
+      border-left: 6px solid #4a6cff;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    .impact-box h2 {
+      margin-top: 0;
+    }
+
+    .contact-list li {
+      margin-bottom: 10px;
+    }
+
+    .contact-icon {
+      margin-right: 8px;
+      color: #4a6cff;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo"><a href="../index.html">PR</a></div>
@@ -21,39 +73,83 @@
     </div>
   </header>
 
+  <!-- CONTACT CONTENT -->
   <section class="section">
     <div class="container contact-grid">
+
+      <!-- LEFT SIDE -->
       <div>
-        <h1>Contacto</h1>
+        <h1>Hablemos</h1>
+
         <p>
-          Si quieres conversar sobre un proyecto, colaboración o propuesta de
-          trabajo, puedes contactarme por los siguientes medios:
+          Si buscas desarrollar un proyecto sólido, modernizar una plataforma existente  
+          o recibir acompañamiento técnico profesional, estaré encantado de conversar contigo.
         </p>
+
+        <p>
+          Trabajo con empresas, startups, agencias y equipos que buscan elevar la calidad  
+          de sus soluciones digitales con arquitectura moderna, performance y escalabilidad.
+        </p>
+
         <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:nike_1109@outlook.es">nike_1109@outlook.es</a></li>
-          <li><strong>Teléfono:</strong> +51 981 226 179</li>
-          <li><strong>LinkedIn:</strong> <a href="#" target="_blank">Mi perfil</a></li>
-          <li><strong>GitHub:</strong> <a href="#" target="_blank">Mi repositorio</a></li>
+          <li><span class="contact-icon">📧</span> <strong>Email:</strong> 
+            <a href="mailto:nike_1109@outlook.es">nike_1109@outlook.es</a>
+          </li>
+
+          <li><span class="contact-icon">📱</span> <strong>WhatsApp / Teléfono:</strong> 
+            <a href="https://wa.me/51981226179" target="_blank">+51 981 226 179</a>
+          </li>
+
+          <li><span class="contact-icon">💼</span> <strong>LinkedIn:</strong> 
+            <a href="https://linkedin.com" target="_blank">linkedin.com/in/paul-rodriguez</a>
+          </li>
+
+          <li><span class="contact-icon">💻</span> <strong>GitHub:</strong> 
+            <a href="https://github.com/paulnike" target="_blank">github.com/paulnike</a>
+          </li>
         </ul>
+
+        <a href="mailto:nike_1109@outlook.es" class="contact-cta">
+          📩 Enviar mensaje ahora
+        </a>
+
+        <!-- IMPACT BOX -->
+        <div class="impact-box">
+          <h2>¿Por qué trabajar conmigo?</h2>
+          <ul>
+            <li>Experiencia real en banca, retail, industria, educación y sector público.</li>
+            <li>Dominio de arquitecturas modernas: microservicios, cloud, CI/CD, APIs seguras.</li>
+            <li>Entrega de soluciones estables, escalables y diseñadas para crecer.</li>
+            <li>Acompañamiento técnico claro, orientado al negocio y sin fricción.</li>
+          </ul>
+        </div>
+
       </div>
+
+      <!-- RIGHT SIDE CARD -->
       <div class="contact-card">
-        <h2>¿Qué tipo de proyectos atiendo?</h2>
+        <h2>Proyectos que atiendo</h2>
         <ul>
-          <li>Arquitectura y modernización de sistemas</li>
-          <li>Plataformas web y e-commerce</li>
-          <li>Integraciones con servicios cloud</li>
-          <li>Capacitación y mentoría técnica</li>
+          <li>Arquitectura y modernización de sistemas empresariales</li>
+          <li>E-commerce personalizados y plataformas B2C</li>
+          <li>CMS corporativos a medida</li>
+          <li>Integraciones bancarias y pasarelas de pago</li>
+          <li>Sistemas transaccionales y microservicios</li>
+          <li>Cloud (Azure / AWS) y despliegues automatizados</li>
+          <li>Docencia, capacitación y mentoría técnica</li>
         </ul>
       </div>
+
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-content">
       <p>© 2025 · Paul Rodríguez Mijahuanga</p>
     </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="/paul-portafolio/assets/js/main.js"></script>
 </body>
 </html>

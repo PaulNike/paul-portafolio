@@ -4,15 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio | Paul Rodríguez</title>
-  <link rel="stylesheet" href="../paul-portafolio/assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    /* Estilos adicionales para mejorar la presentación */
+    .hero h1 {
+      font-size: 2.6rem;
+      line-height: 1.2;
+    }
+
+    .hero-highlight {
+      font-weight: 700;
+      color: var(--color-primary, #4a6cff);
+    }
+
+    .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-badges span {
+      padding: 6px 12px;
+      background: #f5f7ff;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      border: 1px solid #dce3ff;
+    }
+
+    .featured-projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .featured-card {
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      transition: 0.3s ease;
+    }
+
+    .featured-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.1);
+    }
+
+    .featured-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .footer-content p a {
+      color: var(--color-primary, #4a6cff);
+    }
+  </style>
 </head>
+
 <body>
   <!-- NAVBAR -->
   <header class="site-header">
     <div class="container nav-container">
-      <div class="logo">
-        <a href="index.html">PR</a>
-      </div>
+      <div class="logo"><a href="index.html">PR</a></div>
+
       <nav class="nav" id="main-nav">
         <a href="index.html" class="nav-link active">Inicio</a>
         <a href="home/about.html" class="nav-link">Sobre mí</a>
@@ -20,9 +77,8 @@
         <a href="home/projects.html" class="nav-link">Proyectos</a>
         <a href="home/contact.html" class="nav-link">Contacto</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
-        ☰
-      </button>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
     </div>
   </header>
 
@@ -30,63 +86,113 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <h1>Paul Rodríguez Mijahuanga</h1>
-        <p class="hero-subtitle">
-          Arquitecto de Software · Full-Stack Developer · Cloud Specialist
-        </p>
+        <h1>
+          Arquitecto de Software & Full-Stack Developer<br>
+          <span class="hero-highlight">Diseñando plataformas modernas y escalables</span>
+        </h1>
+
         <p class="hero-text">
-          Diseñando soluciones escalables y seguras para banca, sector público y
-          negocios que quieren crecer. Especializado en Java, microservicios,
-          Azure, arquitecturas hexagonales y e-commerce de alto impacto.
+          Ayudo a empresas, startups y equipos a crear soluciones web robustas,
+          seguras y listas para crecer. Especialista en Java, microservicios, 
+          cloud computing, e-commerce y sistemas transaccionales.
         </p>
+
         <div class="hero-actions">
           <a href="home/projects.html" class="btn btn-primary">Ver proyectos</a>
           <a href="assets/cv/PaulRodriguezCV.pdf" class="btn btn-outline" target="_blank">
             Descargar CV
           </a>
         </div>
+
+        <!-- Tech highlights -->
+        <div class="tech-badges">
+          <span>Java · Spring Boot</span>
+          <span>Microservicios</span>
+          <span>Azure & AWS</span>
+          <span>Laravel · Nuxt · Vue</span>
+          <span>Kafka</span>
+          <span>Docker & CI/CD</span>
+        </div>
       </div>
+
+      <!-- HERO SIDE CARD -->
       <div class="hero-card">
-        <h2>En qué puedo ayudarte</h2>
+        <h2>¿Qué puedo construir para ti?</h2>
         <ul class="hero-list">
-          <li>Diseño de arquitecturas escalables (C4, microservicios)</li>
-          <li>E-commerce a medida (restaurantes, retail, servicios)</li>
-          <li>Integración con Azure, AWS, CI/CD y observabilidad</li>
-          <li>APIs seguras (OAuth2, JWT, API Gateway)</li>
+          <li>Plataformas empresariales y sistemas críticos</li>
+          <li>E-commerce personalizados y de alto rendimiento</li>
+          <li>CMS corporativos a medida</li>
+          <li>Integraciones bancarias y pasarelas de pago</li>
+          <li>Arquitectura cloud & DevOps</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- EMPRESAS / LOGOS -->
+  <!-- EXPERIENCIA -->
   <section class="section section-alt">
     <div class="container">
-      <h2>Experiencia en entornos exigentes</h2>
+      <h2>Empresas que han confiado en mi trabajo</h2>
       <p class="section-intro">
-        He trabajado en proyectos críticos para banca, telecomunicaciones y
-        sector público, manteniendo altos estándares de calidad, seguridad y
-        disponibilidad.
+        Experiencia construyendo soluciones para banca, telecomunicaciones, sector público,
+        industria, educación y comercio electrónico.
       </p>
+
       <div class="logos-row">
         <div class="logo-item">BCP</div>
         <div class="logo-item">Interbank</div>
         <div class="logo-item">SUNAT</div>
         <div class="logo-item">Claro</div>
+        <div class="logo-item">Otto Grill</div>
         <div class="logo-item">NTT DATA</div>
+        <div class="logo-item">Rímac</div>
+        <div class="logo-item">TASA</div>
+        <div class="logo-item">UNACEM</div>
+        <div class="logo-item">Manzana Verde</div>
+        <div class="logo-item">Fegasa</div>
       </div>
     </div>
   </section>
 
-  <!-- CALL TO ACTION -->
+  <!-- PROYECTOS DESTACADOS -->
+  <section class="section">
+    <div class="container">
+      <h2>Proyectos Destacados</h2>
+
+      <div class="featured-projects">
+        <div class="featured-card">
+          <h3>BCP – Plataforma PyME</h3>
+          <p>Microservicios en Azure · APIM · Data Lake · CI/CD.</p>
+          <a href="home/projects.html" class="btn btn-outline">Ver proyecto</a>
+        </div>
+
+        <div class="featured-card">
+          <h3>IziPay – Integración de Pagos</h3>
+          <p>Arquitectura Hexagonal · Kafka · MongoDB · New Relic.</p>
+          <a href="home/projects.html" class="btn btn-outline">Ver proyecto</a>
+        </div>
+
+        <div class="featured-card">
+          <h3>TASA – CMS a medida</h3>
+          <p>Laravel · MSAL · Dashboard corporativo de contenidos.</p>
+          <a href="home/projects.html" class="btn btn-outline">Ver proyecto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LLAMADO A LA ACCIÓN -->
   <section class="section">
     <div class="container cta">
       <div>
-        <h2>¿Buscas una plataforma sólida para tu negocio?</h2>
+        <h2>¿Listo para impulsar tu proyecto?</h2>
         <p>
-          Puedo ayudarte a diseñar y desarrollar una solución robusta, segura y
-          lista para escalar: desde el backend hasta la experiencia de usuario.
+          Puedo ayudarte a construir una solución moderna, segura y 
+          alineada a tus objetivos de negocio, desde la arquitectura
+          hasta el despliegue final.
         </p>
       </div>
+
       <a href="home/contact.html" class="btn btn-primary">Hablemos</a>
     </div>
   </section>
@@ -96,12 +202,12 @@
     <div class="container footer-content">
       <p>© 2025 · Paul Rodríguez Mijahuanga</p>
       <p>
-        <a href="https://github.com/" target="_blank">GitHub</a> ·
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/paulnike" target="_blank">GitHub</a> ·
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
       </p>
     </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="/paul-portafolio/assets/js/main.js"></script>
 </body>
 </html>
