@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Experience – Rimac Seguros | Paul Rodríguez</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo"><a href="../index.html">PR</a></div>
+      <nav class="nav" id="main-nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../home/projects.html" class="nav-link active">Proyectos</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container project-detail">
+
+      <!-- TÍTULO -->
+      <h1>Learning Experience – Plataforma Educativa Rimac Seguros</h1>
+
+      <!-- META -->
+      <p class="project-meta">
+        Cliente: <strong>Rimac Seguros</strong> · 
+        Año: <strong>2024</strong> · 
+        Rol: <strong>Full-Stack Developer – Plataforma Educativa Empresarial</strong>
+      </p>
+
+      <!-- IMAGEN PRINCIPAL -->
+      <img src="../assets/img/learning1.png" alt="Learning Experience Rimac" class="project-hero-img" />
+
+      <!-- CONTEXTO -->
+      <h2>Contexto</h2>
+      <p>
+        Rimac Seguros buscaba reforzar su estrategia de formación interna construyendo
+        una plataforma educativa robusta, escalable y personalizada para sus miles de 
+        colaboradores. La plataforma debía incluir cursos, instructores, temporadas,
+        grupos, horarios, evaluaciones y una experiencia integral de aprendizaje.
+      </p>
+
+      <p>
+        Además, era indispensable integrar el sistema con autenticación corporativa 
+        del Directorio Activo (Azure AD), permitir acceso con Google y administrar 
+        grandes volúmenes de archivos en AWS S3.
+      </p>
+
+      <!-- SOLUCIÓN -->
+      <h2>Solución Implementada</h2>
+      <p>
+        Se desarrolló un <strong>CMS educativo completamente a medida</strong> utilizando Laravel,
+        con arquitectura escalable distribuida en múltiples servidores, un panel
+        administrativo avanzado y un front office dinámico optimizado para cursos
+        presenciales y virtuales.
+      </p>
+
+      <h3>Front Office – Plataforma de aprendizaje</h3>
+      <ul>
+        <li>Interfaz intuitiva para colaboradores.</li>
+        <li>Acceso a cursos, información de instructores y horarios.</li>
+        <li>Inscripción a temporadas y grupos formativos.</li>
+        <li>Perfil del alumno con historial y progreso.</li>
+        <li>Contenido multimedia alojado en AWS S3.</li>
+      </ul>
+
+      <h3>Back Office – Panel administrativo</h3>
+      <ul>
+        <li>Gestión de banners, cursos y categorías.</li>
+        <li>Gestión completa de instructores y colaboradores.</li>
+        <li>Creación de temarios estructurados.</li>
+        <li>Administración de temporadas y sus grupos.</li>
+        <li>Control de horarios, sesiones y enrolamientos.</li>
+        <li>Gestión de inscritos por curso o temporada.</li>
+        <li>Generación de reportes académicos y administrativos.</li>
+        <li>Gestión avanzada de usuarios y roles.</li>
+      </ul>
+
+      <!-- TECNOLOGÍAS -->
+      <h2>Tecnologías Utilizadas</h2>
+      <ul>
+        <li>PHP – Framework <strong>Laravel</strong></li>
+        <li>MySQL como base de datos estructurada</li>
+        <li>Bootstrap + jQuery para interfaces dinámicas</li>
+        <li>Autenticación corporativa con Azure AD (Directorio Activo)</li>
+        <li>Autenticación Google OAuth</li>
+        <li>AWS S3 para almacenamiento de contenido multimedia</li>
+      </ul>
+
+      <!-- INFRAESTRUCTURA -->
+      <h2>Despliegue e Infraestructura</h2>
+      <ul>
+        <li>VPS Linux (Ubuntu) configurado para alto rendimiento.</li>
+        <li><strong>Balanceador de carga</strong> distribuyendo tráfico entre 3 servidores de aplicación.</li>
+        <li>1 servidor dedicado para base de datos MySQL.</li>
+        <li>Optimización de caching y respuesta de APIs.</li>
+        <li>Arquitectura escalable preparada para miles de usuarios concurrentes.</li>
+      </ul>
+
+      <!-- RESULTADOS -->
+      <h2>Resultados Clave</h2>
+      <ul>
+        <li>Una plataforma educativa escalable para miles de colaboradores.</li>
+        <li>Acceso simplificado gracias a SSO con Azure AD y Google.</li>
+        <li>Mayor eficiencia en la gestión de cursos y temporadas.</li>
+        <li>Aumento en la participación y seguimiento formativo.</li>
+        <li>Back office robusto que reduce carga operativa del área de capacitación.</li>
+      </ul>
+
+      <!-- MOCKUPS -->
+      <h2>Mockups del Proyecto</h2>
+      <p>
+        Imágenes referenciales del front office, panel administrativo y estructura educativa.
+      </p>
+
+      <div class="mockups-grid">
+        <img src="../assets/img/learning1.png" alt="Mockup Learning Rimac 1" class="mockup-img" />
+        <img src="../assets/img/learnin2.png" alt="Mockup Learning Rimac 2" class="mockup-img" />
+        <img src="../assets/img/learning3.png" alt="Mockup Learning Rimac 3" class="mockup-img" />
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Vista previa" />
+      </div>
+
+      <!-- EXTRA CSS -->
+      <style>
+        .mockups-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 20px;
+          margin: 20px 0 40px;
+        }
+        .mockup-img {
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+          object-fit: cover;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .mockup-img:hover {
+          transform: scale(1.03);
+        }
+
+        .lightbox {
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.85);
+          z-index: 9999;
+          justify-content: center;
+          align-items: center;
+        }
+        .lightbox-img {
+          max-width: 90%;
+          max-height: 90vh;
+          border-radius: 10px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .lightbox-close {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+          color: #fff;
+          transition: 0.2s;
+        }
+        .lightbox-close:hover {
+          color: #ffdf91;
+        }
+      </style>
+
+      <!-- VOLVER -->
+      <a href="../home/projects.html" class="btn btn-outline">← Volver a proyectos</a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 · Paul Rodríguez Mijahuanga</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX JS -->
+  <script>
+    const mockups = document.querySelectorAll(".mockup-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    mockups.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- MAIN JS -->
+  <script src="/paul-portafolio/assets/js/main.js"></script>
+
+</body>
+</html>

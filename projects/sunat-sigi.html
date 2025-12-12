@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGI – SUNAT | Paul Rodríguez</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html">PR</a>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../home/projects.html" class="nav-link active">Proyectos</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container project-detail">
+
+      <!-- TÍTULO -->
+      <h1>SIGI – Sistema de Gestión de Información Tributaria – SUNAT</h1>
+
+      <!-- META -->
+      <p class="project-meta">
+        Cliente: <strong>SUNAT / CANVIA</strong> · 
+        Año: <strong>2022</strong> · 
+        Rol: <strong>Backend Developer – Servicios Tributarios</strong>
+      </p>
+
+      <!-- IMAGEN PRINCIPAL -->
+      <img src="../assets/img/sunat.png" alt="SIGI – SUNAT" class="project-hero-img" />
+
+      <!-- CONTEXTO -->
+      <h2>Contexto</h2>
+      <p>
+        SUNAT necesitaba modernizar el sistema <strong>SIGI</strong>, encargado de la 
+        gestión y procesamiento de información tributaria proveniente de múltiples 
+        sistemas internos y externos. El objetivo era mejorar la velocidad de 
+        procesamiento, la calidad de datos y la trazabilidad de los movimientos 
+        asociados a contribuyentes, declaraciones y obligaciones fiscales.
+      </p>
+
+      <p>
+        El sistema anterior presentaba procesos monolíticos, integración limitada y 
+        dificultades para escalar ante altos volúmenes de información, especialmente 
+        en periodos críticos como vencimientos masivos de declaraciones.
+      </p>
+
+      <!-- SOLUCIÓN -->
+      <h2>Solución Implementada</h2>
+      <p>
+        Se desarrolló un conjunto de <strong>servicios REST y microservicios</strong> 
+        orientados al manejo de información tributaria, integrados con sistemas 
+        internos de validación, auditoría y mensajería.
+      </p>
+
+      <ul>
+        <li>Implementación de servicios para registro, actualización y consulta de información tributaria.</li>
+        <li>Integración con plataformas internas mediante conectores JAX-RS y SOAP.</li>
+        <li>Optimización de consultas y persistencia con <strong>MongoDB</strong>.</li>
+        <li>Uso de <strong>Kafka</strong> para eventos tributarios y procesamiento asincrónico.</li>
+        <li>Implementación de validaciones complejas según normativa vigente.</li>
+        <li>Automatización del despliegue con Gradle + pipelines internos.</li>
+      </ul>
+
+      <p>
+        Estas mejoras permitieron que la plataforma gestione grandes volúmenes de datos 
+        con mayor estabilidad y trazabilidad, cumpliendo lineamientos técnicos y 
+        operativos exigidos por SUNAT.
+      </p>
+
+      <!-- TECNOLOGÍAS -->
+      <h2>Tecnologías Utilizadas</h2>
+      <ul>
+        <li>Java 11 · JAX-RS · Jersey</li>
+        <li>Gradle · Pipelines internos</li>
+        <li>MongoDB · SQL Server</li>
+        <li>Kafka – eventos tributarios</li>
+        <li>SOAP / REST para integraciones internas</li>
+        <li>Arquitectura orientada a servicios (SOA)</li>
+      </ul>
+
+      <!-- RESULTADOS -->
+      <h2>Resultados Clave</h2>
+      <ul>
+        <li>Reducción del tiempo de procesamiento de operaciones tributarias en hasta <strong>40%</strong>.</li>
+        <li>Mayor precisión y calidad en la validación de datos.</li>
+        <li>Incremento significativo en la capacidad de procesamiento en picos de carga.</li>
+        <li>Mejor trazabilidad y auditoría mediante eventos Kafka.</li>
+        <li>Facilidad para incorporar nuevas reglas tributarias sin afectar la estabilidad del sistema.</li>
+      </ul>
+
+      <!-- MOCKUPS -->
+      <h2>Mockups del Proyecto</h2>
+      <p>
+        Vista conceptual de interfaces y flujos de validación (imágenes referenciales, sin información sensible).
+      </p>
+
+      <div class="mockups-grid">
+        <img src="../assets/img/sunatm1.png" alt="Mockup SUNAT 1" class="mockup-img" />
+        <img src="../assets/img/sunatm2.png" alt="Mockup SUNAT 2" class="mockup-img" />
+        <img src="../assets/img/sunatm3.png" alt="Mockup SUNAT 3" class="mockup-img" />
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Vista previa" />
+      </div>
+
+      <!-- EXTRA CSS -->
+      <style>
+        .mockups-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 20px;
+          margin: 20px 0 40px;
+        }
+        .mockup-img {
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+          object-fit: cover;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .mockup-img:hover {
+          transform: scale(1.03);
+        }
+
+        .lightbox {
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.85);
+          z-index: 9999;
+          justify-content: center;
+          align-items: center;
+        }
+        .lightbox-img {
+          max-width: 90%;
+          max-height: 90vh;
+          border-radius: 10px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .lightbox-close {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+          color: #fff;
+          transition: 0.2s;
+        }
+        .lightbox-close:hover {
+          color: #ffdf91;
+        }
+      </style>
+
+      <!-- VOLVER -->
+      <a href="../home/projects.html" class="btn btn-outline">← Volver a proyectos</a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 · Paul Rodríguez Mijahuanga</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX JS -->
+  <script>
+    const mockups = document.querySelectorAll(".mockup-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    mockups.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- MAIN JS -->
+  <script src="/paul-portafolio/assets/js/main.js"></script>
+</body>
+</html>

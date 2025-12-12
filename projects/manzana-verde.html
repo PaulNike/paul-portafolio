@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manzana Verde – Plataforma de Alimentación Saludable | Paul Rodríguez</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- Estilos adicionales -->
+  <style>
+    .mockups-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin: 20px 0 40px;
+    }
+    .mockup-img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform .25s ease;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    }
+    .mockup-img:hover {
+      transform: scale(1.03);
+    }
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    .modal.open {
+      display: flex;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .close-modal {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      background: white;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html">PR</a>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../home/projects.html" class="nav-link active">Proyectos</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container project-detail">
+
+      <!-- TÍTULO -->
+      <h1>Manzana Verde – Plataforma Integral de Alimentación Saludable</h1>
+
+      <!-- META -->
+      <p class="project-meta">
+        Cliente: <strong>Manzana Verde</strong> · 
+        Año: <strong>2023</strong> · 
+        Rol: <strong>Fullstack Developer – Frontend/Backend & Arquitectura</strong>
+      </p>
+
+      <!-- IMAGEN PRINCIPAL -->
+      <img src="../assets/img/manzana1.png" alt="Manzana Verde" class="project-hero-img" />
+
+      <!-- CONTEXTO -->
+      <h2>Contexto</h2>
+      <p>
+        Manzana Verde es una plataforma líder en el sector de alimentación saludable en Latinoamérica.
+        Durante 2023, la empresa buscaba migrar y consolidar su ecosistema digital en una única 
+        plataforma altamente escalable para manejar suscripciones, planes nutricionales,
+        seguimiento de objetivos, pagos y logística de entrega.
+      </p>
+
+      <p>
+        El sistema previo tenía múltiples servicios aislados, problemas de rendimiento y 
+        duplicidad de flujos. Además, la empresa necesitaba mejorar su experiencia móvil,
+        optimizar conversiones y tener trazabilidad completa del comportamiento del usuario
+        para estrategias de marketing y personalización.
+      </p>
+
+      <!-- SOLUCIÓN -->
+      <h2>Solución Implementada</h2>
+      <p>
+        Se desarrolló la plataforma completa desde cero utilizando <strong>Nuxt.js y Vue 3</strong>,
+        integrada con servicios de analítica, logística, nutrición y pasarelas de pago.
+        La solución buscó centralizar operaciones, mejorar la experiencia del usuario y 
+        optimizar el rendimiento en dispositivos móviles.
+      </p>
+
+      <h3>Principales funcionalidades entregadas:</h3>
+      <ul>
+        <li>Implementación de un Frontend SSR con <strong>Nuxt.js</strong> para mejorar SEO y tiempos de carga.</li>
+        <li>Gestión completa de suscripciones y planes nutricionales personalizados.</li>
+        <li>Sistema de checkout optimizado con integración a pagos locales e internacionales.</li>
+        <li>Mapa interactivo para selección de zonas de entrega usando <strong>Google Maps API</strong>.</li>
+        <li>Gestión de usuarios con inicio de sesión mediante <strong>Google Sign-in</strong>.</li>
+        <li>Panel nutricional con información diaria personalizada.</li>
+        <li>Dashboards internos basados en Pinia + consultas optimizadas.</li>
+        <li>Integración total con CDP <strong>Segment</strong> para atribución y remarketing.</li>
+        <li>Implementación de componentes UI con <strong>Tailwind CSS</strong> + animaciones con Goober.</li>
+        <li>Optimización de métricas Core Web Vitals y prioridad de recursos (Priority Hints).</li>
+      </ul>
+
+      <!-- TECNOLOGÍAS -->
+      <h2>Tecnologías Utilizadas</h2>
+      <ul>
+        <li>Nuxt.js + Vue.js (SSR & SSG)</li>
+        <li>Pinia (gestión de estado)</li>
+        <li>Tailwind CSS + Goober + lit-html / lit-element</li>
+        <li>Google Analytics, Google Tag Manager, Segment</li>
+        <li>Google Ads y Pixel de conversiones</li>
+        <li>Google Maps API</li>
+        <li>Google Sign-in</li>
+        <li>API interna de logística y planes nutricionales</li>
+      </ul>
+
+      <!-- RESULTADOS -->
+      <h2>Resultados Clave</h2>
+      <p>El proyecto permitió una escalabilidad significativa y mejoras directas en el negocio:</p>
+
+      <ul>
+        <li>Aumento del <strong>40% en conversiones</strong> gracias a mejoras en UX y rendimiento.</li>
+        <li>Reducción del tiempo de carga en móviles en un <strong>55%</strong>.</li>
+        <li>Sistema de suscripciones centralizado con menor fricción.</li>
+        <li>Implementación de análisis avanzado con Segment para personalización.</li>
+        <li>Experiencia de usuario más fluida con Nuxt SSR + Tailwind.</li>
+        <li>Incremento del engagement en el panel nutricional.</li>
+      </ul>
+
+      <!-- MOCKUPS -->
+      <h2>Mockups del Proyecto</h2>
+      <p>A continuación, una muestra visual de la plataforma implementada.</p>
+
+      <div class="mockups-grid">
+        <img src="../assets/img/manzana1.png" alt="Manzana Verde Mockup 1" class="mockup-img" />
+        <img src="../assets/img/manzana2.png" alt="Manzana Verde Mockup 2" class="mockup-img" />
+        <img src="../assets/img/manzana3.png" alt="Manzana Verde Mockup 3" class="mockup-img" />
+      </div>
+
+      <!-- MODAL -->
+      <div id="modal" class="modal">
+        <button class="close-modal" id="closeModal">✕</button>
+        <img id="modalImg" src="" alt="Preview" />
+      </div>
+
+      <!-- VOLVER -->
+      <a href="../home/projects.html" class="btn btn-outline">← Volver a proyectos</a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 · Paul Rodríguez Mijahuanga</p>
+    </div>
+  </footer>
+
+  <!-- JS DEL MODAL -->
+  <script>
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImg");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll(".mockup-img").forEach(img => {
+      img.addEventListener("click", () => {
+        modalImg.src = img.src;
+        modal.classList.add("open");
+      });
+    });
+
+    closeModal.addEventListener("click", () => modal.classList.remove("open"));
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.classList.remove("open");
+    });
+  </script>
+
+  <script src="/paul-portafolio/assets/js/main.js"></script>
+
+</body>
+</html>

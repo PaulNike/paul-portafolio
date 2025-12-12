@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beneficios – TASA | Paul Rodríguez</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo"><a href="../index.html">PR</a></div>
+      <nav class="nav" id="main-nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../home/projects.html" class="nav-link active">Proyectos</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container project-detail">
+
+      <!-- TÍTULO -->
+      <h1>Beneficios – TASA</h1>
+
+      <!-- META -->
+      <p class="project-meta">
+        Cliente: <strong>TASA</strong> · 
+        Año: <strong>2024</strong> · 
+        Rol: <strong>Desarrollador Full-Stack – CMS a medida</strong>
+      </p>
+
+      <!-- IMAGEN PRINCIPAL -->
+      <img src="../assets/img/tasam1.png" alt="Beneficios TASA" class="project-hero-img" />
+
+      <!-- DESCRIPCIÓN GENERAL -->
+      <h2>Descripción del Proyecto</h2>
+      <p>
+        “Beneficios – TASA” es una plataforma web interna para empleados de TASA que
+        centraliza y presenta todos los beneficios laborales disponibles según el 
+        perfil del trabajador (operarios, administrativos, otros). La plataforma
+        fue desarrollada como un **CMS a medida** para gestionar contenidos dinámicamente,
+        permitiendo a la organización administrar páginas, categorías, beneficios,
+        temas, artículos, usuarios y archivos desde un panel personalizado.
+      </p>
+      <p>
+        El objetivo principal fue digitalizar y facilitar el acceso a la información 
+        sobre beneficios, así como permitir una gestión simple y flexible por parte 
+        del equipo de TASA.
+      </p>
+
+      <!-- SOLUCIÓN -->
+      <h2>Solución Implementada</h2>
+      <p>
+        Se implementó una aplicación web responsiva con backend en <strong>Laravel (PHP)</strong>,
+        una arquitectura modular en la que cada componente de contenido del CMS puede 
+        ser creado, editado o eliminado desde un panel de administración seguro.
+      </p>
+      <p>
+        El desarrollo incluyó tanto la interfaz pública para usuarios finales 
+        (empleados de TASA) como el panel administrativo con roles y permisos.
+      </p>
+
+      <!-- DETALLES TÉCNICOS -->
+      <h2>Desarrollo y Alcance</h2>
+      <ul>
+        <li>Diseño responsivo y programación frontend adaptado a múltiples dispositivos.</li>
+        <li>Backend robusto con Laravel para gestión de contenidos (CMS).</li>
+        <li>Panel administrativo completo para administración de todos los módulos.</li>
+        <li>Módulos de gestión: páginas, categorías, beneficios, temas y artículos.</li>
+        <li>Gestión de usuarios con roles y permisos.</li>
+        <li>Gestión avanzada de archivos y recursos multimedia.</li>
+        <li>Autenticación integrada con MSAL (Azure AD) para acceso seguro.</li>
+        <li>Despliegue en VPS Linux con base de datos MySQL optimizada.</li>
+      </ul>
+
+      <!-- TECNOLOGÍAS -->
+      <h2>Tecnologías Utilizadas</h2>
+      <ul>
+        <li>PHP (Laravel Framework)</li>
+        <li>MySQL (Base de datos)</li>
+        <li>Bootstrap (Frontend responsivo)</li>
+        <li>MSAL / Azure AD (Autenticación de usuarios)</li>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>VPS Linux (Ubuntu), servidor en la nube</li>
+      </ul>
+
+      <!-- RESULTADOS -->
+      <h2>Resultados y Beneficios</h2>
+      <ul>
+        <li>Entrega de una plataforma interna accesible desde cualquier dispositivo.</li>
+        <li>Permite administración completa del contenido sin intervención técnica.</li>
+        <li>Facilitó el acceso a los beneficios laborales para cientos de trabajadores.</li>
+        <li>Integración segura con el sistema de autenticación corporativo (MSAL).</li>
+        <li>Arquitectura extensible y mantenible para evolución futura.</li>
+      </ul>
+
+      <!-- MOCKUPS -->
+      <h2>Mockups del Proyecto</h2>
+      <p>Imágenes representativas de las interfaces y secciones del sistema de beneficios.</p>
+
+      <div class="mockups-grid">
+        <img src="../assets/img/tasam1.png" alt="Mockup Beneficios TASA 1" class="mockup-img" />
+        <img src="../assets/img/tasam2.png" alt="Mockup Beneficios TASA 2" class="mockup-img" />
+        <img src="../assets/img/tasam3.png" alt="Mockup Beneficios TASA 3" class="mockup-img" />
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Vista previa" />
+      </div>
+
+      <!-- CSS EXTRA -->
+      <style>
+        .mockups-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 20px;
+          margin: 20px 0 40px;
+        }
+        .mockup-img {
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+          object-fit: cover;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .mockup-img:hover {
+          transform: scale(1.03);
+        }
+
+        .lightbox {
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.85);
+          z-index: 9999;
+          justify-content: center;
+          align-items: center;
+        }
+        .lightbox-img {
+          max-width: 90%;
+          max-height: 90vh;
+          border-radius: 10px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .lightbox-close {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+          color: #fff;
+          transition: 0.2s;
+        }
+        .lightbox-close:hover {
+          color: #ffdf91;
+        }
+      </style>
+
+      <!-- VOLVER -->
+      <a href="../home/projects.html" class="btn btn-outline">← Volver a proyectos</a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 · Paul Rodríguez Mijahuanga</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX JS -->
+  <script>
+    const mockups = document.querySelectorAll(".mockup-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    mockups.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- MAIN JS -->
+  <script src="/paul-portafolio/assets/js/main.js"></script>
+</body>
+</html>
